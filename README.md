@@ -16,7 +16,9 @@ strategy conversation down to the pull request.
 Frappe / ERPNext · Docker · Nginx / Caddy · M-Pesa (Daraja), Paystack, card and bank
 payments.
 
-### Live project: scalA
+### Live projects
+
+#### scalA
 
 <a href="https://scala.co.ke"><img src="images/scala.jpg" alt="scalA logo" width="360"></a>
 
@@ -30,7 +32,20 @@ Kenya. I founded it and lead its technology:
   design system, and accessibility fixes.
 - Stack: Next.js 16, Frappe v15, Docker, Nginx.
 
-The code is private; the site is live.
+#### NyamaTrace
+
+<a href="https://nyamatrace.digitalchances.cloud"><img src="images/nyamatrace.png" alt="NyamaTrace farm-to-fork traceability flow" width="480"></a>
+
+[NyamaTrace](https://nyamatrace.digitalchances.cloud) is a farm-to-fork traceability app
+and marketplace for Kenyan sheep and goat farmers. I'm its designer and admin, and I took
+it from staging to production for its first pilot farm:
+
+- Farmers record each animal; buyers scan a QR code that opens a public trace page showing
+  where their meat came from.
+- Orders paid with M-Pesa, with a reconciliation step so payments match orders.
+- Stack: Next.js, React, PostgreSQL / Prisma, Auth.js, Docker.
+
+The code for both projects is private; the sites are live.
 
 ### Public examples
 
