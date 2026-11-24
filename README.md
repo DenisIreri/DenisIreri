@@ -47,6 +47,40 @@ it from staging to production for its first pilot farm:
 
 The code for both projects is private; the sites are live.
 
+### In progress
+
+#### Makap: ERPNext for a packaging manufacturer (Uganda)
+
+<img src="images/makap.png" alt="Makap order-to-roll flow: customer onboarding, packaging spec and print cylinders, work order with backflush costing, roll genealogy, quality acceptance, cost variance and order margin, and a planned QuickBooks Online sync" width="480">
+
+A custom ERPNext (Frappe) app for a flexible-packaging manufacturer, built and awaiting
+go-live. I'm its architect and lead developer.
+
+- Packaging specifications, material structures, print-cylinder ownership, customer
+  onboarding and quality acceptance requirements.
+- Roll genealogy traces every roll; work-order cost variance shows actual material use
+  against plan; an order closure view shows margin.
+- Company setup (UGX, VAT 18%, July–June year) runs as a dry run first.
+- Next phase: a sync to QuickBooks Online, the client's accounting platform.
+- Stack: ERPNext / Frappe, Python, MariaDB, Docker.
+
+#### ChloeTech: AI design-to-build platform for houses
+
+<img src="images/chloetech.png" alt="ChloeTech flow: client brief and images, structured brief, one coherent 3D building model in IFC driving renders, cost band and quantities, then a professional review gate before the design package" width="480">
+
+A platform that turns a client's brief and inspiration images into one coherent 3D house
+design, a preliminary cost band and, after professional review, a design package. I'm its
+architect and lead developer.
+
+- Model-first: a single digital building model sits behind every output, and AI imagery
+  is never treated as geometry.
+- Built so far: shared Zod contracts, a Python modelling engine with an IFC (BIM) backend,
+  and a feasibility test harness with 531 engine tests.
+- Currently in its feasibility phase, before the client-facing web app.
+- Stack: Python, IFC / BIM, TypeScript, Zod; Next.js planned for the web app.
+
+Both repositories are private.
+
 ### Public examples
 
 Most of my work lives in private repositories that belong to the organisations I work
