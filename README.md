@@ -45,7 +45,23 @@ it from staging to production for its first pilot farm:
 - Orders paid with M-Pesa, with a reconciliation step so payments match orders.
 - Stack: Next.js, React, PostgreSQL / Prisma, Auth.js, Docker.
 
-The code for both projects is private; the sites are live.
+#### Multi-tenant VPS: security hardening
+
+<img src="images/vps.png" alt="Multi-tenant VPS hardening: internet through a Docker-aware firewall and an HTTPS-only reverse proxy to 15 sites and about 49 containers, admin ports closed, and deploys from private self-hosted Git with read-only deploy keys and a manual deploy gate" width="480">
+
+One VPS hosts about 49 containers and 15 public sites for several organisations. As CTO
+at Digital Chances I commissioned and approved its security hardening:
+
+- Exposed admin ports closed, and a firewall layer Docker cannot bypass.
+- A dead Cloudflare tunnel removed.
+- Repositories moved from GitHub to private self-hosted Git, with read-only deploy keys
+  and manual deploy gates.
+- A follow-up audit found two high-severity issues; both were fixed the same day.
+
+A generic version of the approach is public:
+[docker-vps-hardening](https://github.com/DenisIreri/docker-vps-hardening).
+
+The code for scalA and NyamaTrace is private; the sites are live.
 
 ### In progress
 
