@@ -16,6 +16,22 @@ strategy conversation down to the pull request.
 Frappe / ERPNext · Docker · Nginx / Caddy · M-Pesa (Daraja), Paystack, card and bank
 payments.
 
+### Live project: scalA
+
+<a href="https://scala.co.ke"><img src="images/scala.jpg" alt="scalA logo" width="360"></a>
+
+[scalA (Scale a Life!)](https://scala.co.ke) raises funds for young people leaving care in
+Kenya. I founded it and lead its technology:
+
+- Guest checkout (give without an account) and KES payments via Paystack, M-Pesa, card
+  and bank transfer.
+- Member KYC with consent-gated publishing of personal stories.
+- Google Ad Grants re-application in one week: PageSpeed 100, a full rebrand to a new
+  design system, and accessibility fixes.
+- Stack: Next.js 16, Frappe v15, Docker, Nginx.
+
+The code is private; the site is live.
+
 ### Public examples
 
 Most of my work lives in private repositories that belong to the organisations I work
