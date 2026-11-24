@@ -45,6 +45,25 @@ it from staging to production for its first pilot farm:
 - Orders paid with M-Pesa, with a reconciliation step so payments match orders.
 - Stack: Next.js, React, PostgreSQL / Prisma, Auth.js, Docker.
 
+#### AquaFlow: multi-tenant SaaS for water shops
+
+<a href="https://aqua-flow.digitalchances.cloud"><img src="images/aquaflow.png" alt="AquaFlow: cashier till, branch manager and owner feeding an offline-safe sync protocol and tenant isolation in the data layer, then a stock ledger, branch prices and reports, with Starter, Growth and Enterprise subscription tiers" width="480"></a>
+
+[AquaFlow](https://aqua-flow.digitalchances.cloud) lets water and refill businesses run
+several branches from one account, on Starter, Growth or Enterprise tiers billed in KSh
+per month. Another developer built the first MVP; as technical lead I wrote the product
+spec, reviewed the build against it and took it to pilot:
+
+- Tenant isolation enforced in the data layer, not route by route, and roles checked on
+  the server.
+- An offline-first till (PWA with a service worker) whose sync answers each sale as saved,
+  duplicate or rejected, so a replayed backlog never double-counts.
+- A stock ledger with inter-branch transfers, a lock so simultaneous transfers can't
+  overdraw a branch, and first-in-first-out cost of goods.
+- Per-branch prices, staff invites, a platform console and trials.
+- 92 automated tests; Docker deploy with nightly database backups. Now in pilot.
+- Stack: Next.js, TypeScript, MongoDB, Zod.
+
 #### Multi-tenant VPS: security hardening
 
 <img src="images/vps.png" alt="Multi-tenant VPS hardening: internet through a Docker-aware firewall and an HTTPS-only reverse proxy to 15 sites and about 49 containers, admin ports closed, and deploys from private self-hosted Git with read-only deploy keys and a manual deploy gate" width="480">
@@ -61,7 +80,7 @@ at Digital Chances I commissioned and approved its security hardening:
 A generic version of the approach is public:
 [docker-vps-hardening](https://github.com/DenisIreri/docker-vps-hardening).
 
-The code for scalA and NyamaTrace is private; the sites are live.
+The code for scalA, NyamaTrace and AquaFlow is private; the sites are live.
 
 ### In progress
 
