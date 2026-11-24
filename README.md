@@ -23,8 +23,8 @@ with. These are small, self-contained examples of how I approach the same proble
 
 | Repository | What it shows |
 | --- | --- |
-| [mpesa-daraja-reconciliation](../../mpesa-daraja-reconciliation) | M-Pesa STK Push with idempotent callbacks and a reconciliation report: duplicates, wrong amounts, double payments and lost callbacks are caught, not ignored. |
-| [docker-vps-hardening](../../docker-vps-hardening) | A baseline for running several apps on one Docker host without exposing databases or admin panels, including the Docker/UFW firewall gap most setups miss. |
+| [mpesa-daraja-reconciliation](https://github.com/DenisIreri/mpesa-daraja-reconciliation) | M-Pesa STK Push with idempotent callbacks and a reconciliation report: duplicates, wrong amounts, double payments and lost callbacks are caught, not ignored. |
+| [docker-vps-hardening](https://github.com/DenisIreri/docker-vps-hardening) | A baseline for running several apps on one Docker host without exposing databases or admin panels, including the Docker/UFW firewall gap most setups miss. |
 
 ### Work with me
 
